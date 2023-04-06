@@ -10,7 +10,7 @@ export const Done = ({ record }) => {
       href="#done"
       onClick={() => {
         dispatchTodos({
-          type: "STATUS_DONE",
+          type: "DONE",
           payload: record.key,
         });
       }}
@@ -29,7 +29,7 @@ export const Working = ({ record }) => {
       href="#working"
       onClick={() => {
         dispatchTodos({
-          type: "STATUS_WORKING",
+          type: "WORKING",
           payload: record.key,
         });
       }}
@@ -37,7 +37,7 @@ export const Working = ({ record }) => {
       <Button type="primary">Working</Button>
     </a>
   );
-}
+};
 
 // OVERDUE
 
@@ -48,7 +48,7 @@ export const Overdue = ({ record }) => {
       href="#overdue"
       onClick={() => {
         dispatchTodos({
-          type: "STATUS_OVERDUE",
+          type: "OVERDUE",
           payload: record.key,
         });
       }}
@@ -56,9 +56,9 @@ export const Overdue = ({ record }) => {
       <Button type="primary">Overdue</Button>
     </a>
   );
-}
+};
 
-// OPEN 
+// OPEN
 
 export const Open = ({ record }) => {
   const [, dispatchTodos] = useContext(TodoContext);
@@ -67,7 +67,7 @@ export const Open = ({ record }) => {
       href="#open"
       onClick={() => {
         dispatchTodos({
-          type: "STATUS_OPEN",
+          type: "OPEN",
           payload: record.key,
         });
       }}
@@ -75,7 +75,4 @@ export const Open = ({ record }) => {
       <Button type="primary">Open</Button>
     </a>
   );
-}
-
-
-
+};

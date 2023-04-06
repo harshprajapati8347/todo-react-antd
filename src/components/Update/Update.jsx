@@ -80,6 +80,9 @@ export const Update = ({ record }) => {
                     { value: "OVERDUE", label: "OVERDUE" },
                     { value: "DONE", label: "DONE" },
                   ]}
+                  onChange={(value) => {
+                    setStatus(value);
+                  }}
                 />
               </Space>
             </Form.Item>{" "}

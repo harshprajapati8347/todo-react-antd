@@ -15,7 +15,7 @@ export const AddTodoForm = () => {
   const [form, setForm] = useState("");
   const [description, setDescription] = useState("");
   const [timestamp, setTimestamp] = useState();
-  const [status, setStatus] = useState("STATUS_OPEN");
+  const [status, setStatus] = useState("OPEN");
   const [date, setDate] = useState();
   const [, dispatchTodos] = useContext(TodoContext);
 
