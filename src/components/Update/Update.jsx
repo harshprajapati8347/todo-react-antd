@@ -1,8 +1,7 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { TodoContext } from "../../App";
 import { Button, Form, Input, Modal, Select, Space } from "antd";
 import { Calendar } from "../Form/Calendar.component";
-import { Timestamp } from "../Timestamp/Timestamp.component";
 
 export const Update = ({ record }) => {
   const [, dispatchTodos] = useContext(TodoContext);
